@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tables in HTML</h1>
+    <table>
+        <caption>Weekly Schedule</caption>
+        <thead>
+            <tr>
+                <th>Lesson</th>
+                <th>Teacher</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="3">
+                    Core Programming Modules
+                </td>
+            </tr>
+            <tr>
+                <td>Java</td>
+                <td>Thanasis</td>
+                <td>Monday</td>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>Markos</td>
+                <td rowspan="2">Friday</td>
+            </tr>
+            <tr>
+                <td>SQL</td>
+                <td>Makis</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
