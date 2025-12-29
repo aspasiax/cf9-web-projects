@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+
+    <main>
+        <h2>User Registration</h2>
+        
+        <form>
+            <fieldset>
+                <legend>Personal Information</legend>
+                
+                <div>
+                    <label for="fldFirstname">First Name:</label>
+                    <input type="text" name="firstname" id="fldFirstname" 
+                           placeholder="Enter first name" minlength="5" maxlength="15" required>
+                </div>
+
+                <div>
+                    <label for="fldEmail">Email:</label>
+                    <input type="email" name="email" id="fldEmail" required>
+                </div>
+
+                <div>
+                    <label for="fldWorkExperience">Work Experience (years):</label>
+                    <input type="number" name="work-experience" id="fldWorkExperience" min="0" max="20">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Demographics</legend>
+                
+                <p><strong>Gender:</strong></p>
+                <input type="radio" name="gender" value="male" id="fldMale">
+                <label for="fldMale">Male</label>
+                
+                <input type="radio" name="gender" value="female" id="fldFemale">
+                <label for="fldFemale">Female</label>
+                
+                <input type="radio" name="gender" value="other" id="fldOther">
+                <label for="fldOther">Other</label>
+
+                <div style="margin-top: 15px;">
+                    <label for="fldNationality">Nationality:</label>
+                    <select name="nationality" id="fldNationality">
+                        <option value="" disabled selected>Choose Nationality</option>
+                        <option value="greek">Greece</option>
+                        <option value="english">England</option>
+                        <option value="spanish">Spain</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferences & Message</legend>
+                
+                <p><strong>Vehicles Owned:</strong></p>
+                <input type="checkbox" name="vehicle" value="bike" id="fldBike">
+                <label for="fldBike">Bike</label>
+                
+                <input type="checkbox" name="vehicle" value="motorcycle" id="fldMotorcycle">
+                <label for="fldMotorcycle">Motorcycle</label>
+                
+                <input type="checkbox" name="vehicle" value="car" id="fldCar">
+                <label for="fldCar">Car</label>
+
+                <div style="margin-top: 15px;">
+                    <label for="fldMessage">Write your Message:</label><br>
+                    <textarea name="message" id="fldMessage" rows="5" cols="30"></textarea>
+                </div>
+            </fieldset>
+
+            <div style="margin-top: 20px;">
+                <button type="submit">Submit</button>
+                <button type="reset">Clear Form</button>
+            </div>
+
+        </form>
+    </main>
+
+    </body>
+</html>
