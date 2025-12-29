@@ -1,0 +1,66 @@
+/* 1. Base Styles */
+body {
+    background-color: lightgray;
+}
+
+p, li {
+    color: red;
+}
+
+/* 2. Specificity & Combinators */
+.aueb-logo-img {
+    border: 3px solid green;
+    width: 400px;
+    height: auto;
+}
+
+/* Child Selector: Only direct li of ul */
+ul > li {
+    color: blue;
+}
+
+/* Adjacent Sibling Selector: The p immediately after h1 */
+h1 + p {
+    color: orange;
+}
+
+/* 3. Link States (LVFHA Order) */
+.link-cf:link {
+    text-decoration: none;
+    color: black;
+}
+
+.link-cf:visited {
+    color: brown;
+}
+
+.link-cf:focus {
+    outline: 2px solid blue;
+    background-color: yellow;
+}
+
+.link-cf:hover {
+    background-color: green;
+    color: white;
+}
+
+.link-cf:active {
+    background-color: chocolate;
+}
+
+/* 4. Utilities */
+#main-description {
+    color: lightskyblue;
+    font-weight: bold;
+}
+
+.border-green-1 { 
+    border: 1px solid green;
+ }
+
+.border-green-2 { 
+    border: 2px solid green; 
+}
+.text-blue { 
+    color: blue; 
+}
